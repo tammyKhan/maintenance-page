@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Under Maintenance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font-awesome -->
+ <script src="https://kit.fontawesome.com/44b771e9c2.js" crossorigin="anonymous"></script>
+
+    <!-- Animate.css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+   
+  </head>
+
+  <body class=" text-gray-800">
+    <div class="min-h-screen flex flex-col items-center justify-center text-center p-6">
+      <!-- Animated Maintenance Icon -->
+      <div class="animate__animated animate__rotateIn mb-6 text-purple-600">
+        <i class="fas fa-tools text-7xl sm:text-8xl animate-spin-slow"></i>
+      </div>
+
+      <!-- Main Text Content -->
+      <div class="animate__animated animate__fadeInDown">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4 text-[#17256a]">
+           We're Getting Ready for Something Amazing!
+        </h1>
+        <p class="text-lg sm:text-xl max-w-xl mx-auto mb-6">
+          Our website is currently under maintenance as we prepare to launch something exciting.
+        </p>
+        <p class="mb-2">
+          We’re working hard behind the scenes to bring you a better experience and we can't wait to show you what’s coming.
+        </p>
+        <p class="mb-6"><i class="fa-cog or fa-screwdriver-wrench"></i> In the meantime, feel free to reach out:</p>
+      </div>
+
+      <!-- QR Code Section -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-10 animate__animated animate__zoomIn">
+        <!-- Facebook QR -->
+        <div class="text-center">
+          <p class="font-semibold mb-2">Follow Us on Facebook</p>
+          <img src="./images/schemash-fb.png" alt="Facebook QR" class="w-32 h-32 border border-gray-300 shadow-lg" />
+        </div>
+
+        <!-- Call QR -->
+        <div class="text-center">
+          <p class="font-semibold mb-2">Scan to Call</p>
+          <img src="./images/schemash-call.png" alt="Call QR" class="w-32 h-32 border border-gray-300 shadow-lg" />
+        </div>
+      </div>
+
+      <!-- Footer Text -->
+      <div class="mt-8 text-sm text-gray-600">
+        <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:www.rokon7070@gmail.com" class="hover:underline text-purple-600">www.rokon7070@gmail.com</a></p>
+        <p><i class="fa-solid fa-mobile-screen-button"></i> Stay connected on social media!</p>
+        <p class="mt-6">Thanks for your patience and support. We’ll be back soon!</p>
+        <p class="mt-2 font-semibold text-purple-600">— The Schemash Team</p>
+      </div>
+    </div>
+
+    <style>
+      .animate-spin-slow {
+        animation: spin 4s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      body {
+        background: linear-gradient(-50deg,  #d3eeff, #ffd6e8, #afeeee, #ffe4e1);
+        background-size: 400% 400%;
+        animation: gradientBG 6s ease infinite;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </body>
+</html>
